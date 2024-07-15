@@ -1,6 +1,6 @@
 import os
-print(os.getcwd())
-if str(os.getcwd()).split("MOTTracker")[-1]=="MOTTracker":
+print(os.getcwd(), str(os.getcwd()).split("\\")[-1])
+if str(os.getcwd()).split("\\")[-1]=="MOTTracker":
     os.chdir(os.path.join(os.getcwd(), "yolov9"))
 print(os.getcwd())
 
