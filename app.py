@@ -1,8 +1,8 @@
 import os
-print(os.getcwd(), str(os.getcwd()).split("\\")[-1])
-if str(os.getcwd()).split("\\")[-1]=="MOTTracker":
-    os.chdir(os.path.join(os.getcwd(), "yolov9"))
-print(os.getcwd())
+from pathlib import Path
+# print(os.getcwd(), str(os.getcwd()).split("\\")[-1])
+# if str(os.getcwd()).split("\\")[-1]=="MOTTracker":
+#     print(os.getcwd())
 
 import shutil
 from utils.general import cv2
